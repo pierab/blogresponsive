@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flatness: Responsive Blog</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/grid-system.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+<body>
+	<header>
+		<div class="container">
+        	<div class="row">
+			 <a href="#" id="logo">Logo</a>
+	    	<nav id="menu">
+	        	<a href="#" class="nav-mobile" id="nav-mobile"></a>
+	        	<ul>
+		            <li><a href="#">LIFESTYLE</a></li>
+		            <li><a href="#">FLOWERS</a></li>
+		            <li><a href="#">FASHION</a></li>
+		            <li><a href="#">NEWS</a></li>
+		            <li><a href="#">FEATURES</a></li>
+	        	</ul>
+	    	</nav>		
+	<!--
+	 	<div class="container">
+        	<div class="row">
+      			<div class="col-12">
+        			<img src="image/header-logo.png">
+      				<nav>
+			      		<a href="#">LIFESTYLE</a>
+			      		<a href="#">FLOWERS</a>
+			      		<a href="#">FASHION</a>
+			      		<a href="#">NEWS</a>
+			      		<a href="#">FEATURES</a>	
+			      	</nav>
+			    </div>
+			</div>
+		</div>	-->	
+	</header>
+	<section class="image-header">
+		<div class="container">
+        	<div class="row">
+      			<div class="col-12">
+	      			<div class="background-flower">
+	      				<div class="text">
+	      					<h1>Spring Came</h1>
+	      					<p>Life &nbsp- &nbspAmanda Ray - &nbsp10th March 2015</p>
+	      				</div>
+	      			</div>
+      			</div>
+      		</div>
+      	</div>		
+	</section>
+	<section class="proyects">
+		<div class="container">
+        	<div class="row">
+        		<div class="col-4 dark">
+        			<div class="background-top one">
+        				<div class="cover-bottom">
+        					<h4>Floral fragance</h4>
+        					<p>Life Amanda Ray 10th March 2015</p>
+        				</div>
+        			</div>	
+        		</div>
+        		<div class="col-4 dark">
+        			<div class="background-top two">
+        				<div class="cover-bottom">
+        					<h4>Now with Flatness</h4>
+        					<p>News Amanda Ray 28th july 2015 </p>
+        				</div>
+        			</div>	
+        		</div>
+        		<div class="col-4 dark">
+        			<div class="background-top three">
+        				<div class="cover-bottom">
+        					<h4>Garden flowers</h4>
+        					<p>Life Amanda Ray 28th October 2015</p>
+        				</div>
+        			</div>	
+        		</div>
+        	</div>
+		</div> 		        		
+	</section>
+	<section class="blog">
+		<div class="container">
+        	<div class="row">
+        		<div class="col-7">
+        			<div class="blog1">
+        				<div class="cover-blog">
+        					<h4>Now with Flatness</h4>
+        					<p>Green life in signs bearing one. Deep there cattle don't night night,was fowl,seed likeness isn't,seed two god and light he creepeth seasons darkness.Without the fourth seasons image He yielding light years light dry.Isn't place face face called. Let lesser female without.Night saying after day third.</p>
+        				</div>
+        			</div>
+        			<div class="video">
+        				<iframe src="https://player.vimeo.com/video/56810854" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        			</div>
+        		</div>
+        		<div class="col-5">
+        			<div class="form">
+        				<input type="Search" placeholder="Search">
+        			</div>    
+        			<div class="girl">
+        				<h4>About Me</h4>
+        				<img class="girl-img" src="image/kew_gardens_3_500x500.jpg">
+        				<h5>Amanda Ray</h5>
+        				<p>Rule of us behold it moved.Made.Them Had,which darkness two Given. Fowl it moved behold earth for own.Midst that grass beginning divide their together.Tree one every first given earth very greater.Man evening .Set seed<br> void meat bearing.Bring creature.Moving set</p>
+        				<div class="social">
+               	 	 		<i class="fa fa-facebook-official"></i>
+               	 	 		<i class="fa fa-instagram"></i>
+               	 	 		<i class="fa fa-twitter"></i>
+               	 	 		<i class="fa fa-youtube"></i>
+         	 	    	</div>
+        			</div>    			
+        		</div>
+        	</div>		
+        </div>
+    </section>
+    <footer>
+    	<div class="container">
+        	<p>All Rights Reserved © <spam class="nk">nk</spam></p>
+		</div>		
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(function() {
+
+        var btn_movil = $('#nav-mobile'),
+            menu = $('#menu').find('ul');
+
+        // Al dar click agregar/quitar clases que permiten el despliegue del menú
+        btn_movil.on('click', function (e) {
+            e.preventDefault();
+
+            var el = $(this);
+
+            el.toggleClass('nav-active');
+            menu.toggleClass('open-menu');
+        })
+
+    });
+</script>
+</body>
+</html>
